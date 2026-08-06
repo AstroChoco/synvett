@@ -296,6 +296,15 @@
     color: var(--ink-soft);
   }
 
+  /* ---- Page divider ---- */
+  .page-divider {
+    max-width: var(--max-w);
+    margin: 3rem auto;
+    border: none;
+    border-top: 1px solid var(--line);
+    opacity: 0.6;
+  }
+
   footer {
     padding: 2.5rem 0 3rem;
     color: var(--ink-soft);

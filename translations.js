@@ -40,6 +40,8 @@ const translations = {
     signupPara: "Anmälan sker via ett kort Google Formulär — det frågar efter ditt namn, kontaktuppgifter, om du tar med en ledarhund och ditt önskemål om materialformat (stor stil, punktskrift eller ljud).",
     signupButton: "Öppna anmälningsformuläret (Google Form, öppnas i en ny flik)",
     formNote: "Detta öppnar Googles eget formulär i en ny flik istället för att bädda in det här, eftersom inbäddade iframes kan fungera inkonsekvent med skärmläsare. Om du hellre vill fylla i det via telefon eller e-post, se kontaktuppgifterna nedan.",
+    teamHeading: "Om teamet",
+    teamPara: "Vi är flera volontärer för att skapa inkluderande och tillgängliga träffar och gemenskap för och med alla med synnedsättning.",
     footerContact: "<strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href=\"mailto:touchpoint@example.org\">?</a> eller ring <a href=\"tel:+15555550123\">?</a> — vi hjälper gärna till.",
     footerAccessibility: "Denna sida följer WCAG 2.1 AA: den fungerar med skärmläsare, tangentbordsnavigering och webbläsarens textzoom. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering."
   },
@@ -74,6 +76,8 @@ const translations = {
     signupPara: "Registration is via a short Google Form — it asks for your name, contact information, whether you're bringing a guide dog, and your preferred material format (large print, braille, or audio).",
     signupButton: "Open registration form (Google Form, opens in new tab)",
     formNote: "This opens Google's form in a new tab instead of embedding it here, as embedded iframes can work inconsistently with screen readers. If you'd prefer to register by phone or email, see contact information below.",
+    teamHeading: "About the team",
+    teamPara: "We are a group of volunteers creating inclusive and accessible meetups and community for and with people with visual impairments.",
     footerContact: "<strong>Questions or accessibility needs not listed here?</strong> Email us at <a href=\"mailto:touchpoint@example.org\">?</a> or call <a href=\"tel:+15555550123\">?</a> — we're happy to help.",
     footerAccessibility: "This page follows WCAG 2.1 AA: it works with screen readers, keyboard navigation, and browser text zoom. If anything here is difficult to use, tell us — that feedback directly shapes the next update."
   }
