@@ -107,11 +107,10 @@
   /* Braille-cell motif — purely decorative, hidden from assistive tech,
      a nod to the community rather than a generic gradient blob. Kept
      faint so it never competes with text. */
-  .dot-field {
+  .hero-field {
     position: absolute;
     inset: 0;
     opacity: 0.14;
-    background-image: radial-gradient(circle, var(--accent) 2.4px, transparent 2.6px);
     background-size: 26px 34px;
     background-position: 0 0, 13px 17px;
     pointer-events: none;
