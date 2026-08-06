@@ -1,0 +1,11 @@
+{
+  "name": "touchpoint-meetup-page",
+  "private": true,
+  "description": "Local dev server for the TouchPoint meetup page",
+  "scripts": {
+    "dev": "live-server --port=5500 --open=/index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

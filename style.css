@@ -1,0 +1,284 @@
+:root {
+    --ink: #FFFFFF;           /* body text — 21:1 on black */
+    --ink-soft: #C9C9C9;      /* muted text — still 13.6:1 on black */
+    --bg: #000000;
+    --bg-panel: #171717;      /* slightly lifted panel, not pure black */
+    --accent: #EEE83C;        /* Trafikverket-style yellow — 16.2:1 on black */
+    --accent-ink: #000000;    /* text/icons placed ON the yellow accent */
+    --line: #333333;
+    --focus-ink: #FFFFFF;
+    --radius: 14px;
+    --max-w: 46rem;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    font-family: "Atkinson Hyperlegible", -apple-system, "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 1.0625rem; /* scales with browser zoom/OS text-size since it's rem-based */
+  }
+
+  img { max-width: 100%; }
+
+  /* ---- Focus visibility: a deliberate double ring (black inner ring, white
+         outer halo) so it stays visible on both the black page and the
+         yellow buttons — a single ring color can't do both. ---- */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #000, 0 0 0 6px var(--focus-ink);
+    border-radius: 4px;
+  }
+
+  /* ---- Skip link ---- */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -3.5rem;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 0.85rem 1.25rem;
+    border-radius: 0 0 10px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 100;
+    transition: top 0.15s ease;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  .wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ---- Header / hero ---- */
+  header.hero {
+    background: var(--bg);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0 3.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Braille-cell motif — purely decorative, hidden from assistive tech,
+     a nod to the community rather than a generic gradient blob. Kept
+     faint so it never competes with text. */
+  .dot-field {
+    position: absolute;
+    inset: 0;
+    opacity: 0.14;
+    background-image: radial-gradient(circle, var(--accent) 2.4px, transparent 2.6px);
+    background-size: 26px 34px;
+    background-position: 0 0, 13px 17px;
+    pointer-events: none;
+  }
+
+  header.hero .wrap { position: relative; }
+
+  .eyebrow {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1.1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 2.9rem);
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+    max-width: 34rem;
+    margin: 0 0 1.75rem;
+    color: var(--ink);
+  }
+
+  .hero-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    font-weight: 700;
+  }
+  .hero-facts li { display: flex; align-items: baseline; gap: 0.5rem; }
+  .hero-facts .label {
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .btn {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 0.95rem 1.75rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    min-height: 44px;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn-primary:hover { background: #FFF176; }
+  .btn-primary:visited { color: var(--accent-ink); }
+
+  /* ---- Nav ---- */
+  nav.section-nav {
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+  nav.section-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.75rem;
+    margin: 0;
+    padding: 0.6rem 0;
+  }
+  nav.section-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 0.85rem;
+    border-bottom: 3px solid transparent;
+  }
+  nav.section-nav a:hover { border-bottom-color: var(--accent); }
+
+  #main:focus {
+    outline: none;
+  }
+
+  /* ---- Main sections ---- */
+  main section {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 4.5rem; /* keeps headings clear of the sticky nav on anchor jumps */
+  }
+  main section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-size: 1.6rem;
+    margin: 0 0 1.1rem;
+    color: var(--accent);
+  }
+
+  p { margin: 0 0 1rem; max-width: 42ch; }
+  section p { max-width: 62ch; }
+
+  .accom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+  .accom-list li {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    background: var(--bg-panel);
+    padding: 1rem 1.1rem;
+    border-radius: var(--radius);
+  }
+  .accom-list .mark {
+    flex: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--accent-ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .detail-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .detail-card {
+    background: var(--bg-panel);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.4rem;
+  }
+  .detail-card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+  }
+  .detail-card p { margin: 0; max-width: none; font-weight: 700; font-size: 1.1rem; }
+
+  /* ---- Signup ---- */
+  .signup-panel {
+    background: var(--bg-panel);
+    border-radius: var(--radius);
+    padding: 2rem;
+  }
+  .signup-panel p { max-width: 60ch; }
+
+  .form-embed-note {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--line);
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    padding: 2.5rem 0 3rem;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+  }
+  footer a { color: var(--accent); }
+  footer p { max-width: 60ch; }
+
+  @media (max-width: 480px) {
+    header.hero { padding: 2.25rem 0 2.5rem; }
+    .signup-panel { padding: 1.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
