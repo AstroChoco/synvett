@@ -92,6 +92,24 @@ for (const [key, value] of Object.entries(sv)) {
   }
 }
 
+// Sync href attributes: for any element with data-i18n-href="key", update its href.
+// The signupLink uses id="signupLink" with the URL stored under the 'signupUrl' key.
+function updateHrefAttribute(htmlContent, id, url) {
+  return htmlContent.replace(
+    new RegExp(`(id="${id}"[^>]*\\shref=")[^"]*(")`, 'g'),
+    `$1${url}$2`
+  );
+}
+
+if (sv.signupUrl) {
+  const before = html;
+  html = updateHrefAttribute(html, 'signupLink', sv.signupUrl);
+  if (html !== before) {
+    updatedCount++;
+    updatedKeys.push('signupLink[href]');
+  }
+}
+
 // Write the updated HTML back
 fs.writeFileSync(htmlPath, html, 'utf-8');
 
