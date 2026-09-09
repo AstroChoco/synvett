@@ -31,16 +31,16 @@
     <h1 data-i18n="heroTitle">Synvett: Dela ditt synsätt och hitta din egen väg</h1>
     <p class="tagline" data-i18n="tagline">Tillsammans för funktionsrätten. Välkommen på en avslappnad, kostnadsfri träff för att prata arbete, studier, hjälpmedel, teknologi, utmaningar, strategier och mer!</p>
 
-    <ul class="hero-facts">
-      <li><span class="label" data-i18n="when">När</span> <span data-i18n="tbdNär">Den 24 september, torsdag, 2026</span></li>
-      <li><span class="label" data-i18n="where">Var</span> <span data-i18n="tbdVar">Sandsborgsvägen 52, Enskede</span></li>
-    </ul>
+    <dl class="hero-facts">
+      <div><dt data-i18n="when">När</dt> <dd data-i18n="tbdNär">Den 24 september, torsdag, 2026</dd></div>
+      <div><dt data-i18n="where">Var</dt> <dd data-i18n="tbdVar">Sandsborgsvägen 52, Enskede</dd></div>
+    </dl>
 
     <a class="btn btn-primary" href="#signup" data-i18n="heroButton">Anmäl dig till Synvett</a>
   </div>
 </header>
 
-<nav class="section-nav" aria-label="Page sections">
+<nav class="section-nav" aria-label="Sidans avsnitt">
   <div class="wrap">
     <ul>
       <li><a href="#about" data-i18n="navAbout">Om träffen</a></li>
@@ -65,17 +65,17 @@
 
     <div class="wrap">
       <div class="stacked-card-list">
-        <div class="info-card" id="attendees" aria-labelledby="attendees-heading">
+        <div class="info-card" role="group" id="attendees" aria-labelledby="attendees-heading">
           <h3 id="attendees-heading" data-i18n="attendeesHeading">Vilka andra kommer?</h3>
           <p data-i18n="attendeesPara">David Renström, Claudio Quitral, Jing Wu, Lisa Ly, och Emil Näslund kommer att närvara och prata om sina tankar, erfarenheter och vägar!</p>
         </div>
 
-        <div class="info-card" id="agenda" aria-labelledby="agenda-heading">
+        <div class="info-card" role="group" id="agenda" aria-labelledby="agenda-heading">
           <h3 id="agenda-heading" data-i18n="agendaHeading">Plan för kvällen</h3>
           <ol class="agenda-list">
-            <li><p data-i18n="agendaItem1">Dörrarna öppnas 17:30.</p></li>
-            <li><p data-i18n="agendaItem2">18:00 presenterar vi oss själva och projektet Synvett.</p></li>
-            <li><p data-i18n="agendaItem3">Vi diskuterar och fikar till 19:30, eller tills man känner för att gå.</p></li>
+            <li data-i18n="agendaItem1">Dörrarna öppnas 17:30.</li>
+            <li data-i18n="agendaItem2">18:00 presenterar vi oss själva och projektet Synvett.</li>
+            <li data-i18n="agendaItem3">Vi diskuterar och fikar till 19:30, eller tills man känner för att gå.</li>
           </ol>
         </div>
       </div>
@@ -86,7 +86,7 @@
   <section id="accessibility" aria-labelledby="accessibility-heading">
     <div class="wrap">
       <h2 id="accessibility-heading" data-i18n="accessibilityHeading">På plats finns</h2>
-      <ul class="accom-list">
+      <ul class="accom-list" role="list">
         <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom1">Fika: te, kaffe, vatten och något sött att äta</span></li>
         <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom2">Seende guider vid ingången och i lokalen (fråga någon av oss arrangörer)</span></li>
         <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom3">Vattenskålar och rastområde för ledarhundar och andra servicehundar</span></li>
@@ -157,7 +157,7 @@
   <div class="wrap">
     <!-- EDIT ME: replace with your real contact details -->
     <p data-i18n="footerContact"><strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href="mailto:info.synvett@gmail.com">info.synvett@gmail.com</a>. Vi hjälper gärna till.</p>
-    <p data-i18n="footerAccessibility">Denna sida följer WCAG 2.2 AA. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering.</p>
+    <p data-i18n="footerAccessibility">Denna sida följer WCAG 2.2 AA. Berätta gärna din feedback för oss. Du hjälper oss forma den nästa uppdateringen.</p>
   </div>
 </footer>
 
@@ -191,14 +191,17 @@ function switchLanguage(lang) {
   currentLangSpan.textContent = lang === 'sv' ? 'EN' : 'SV';
   document.getElementById('langToggle').setAttribute('aria-label',
     lang === 'sv' ? 'EN \u2013 Switch to English' : 'SV \u2013 Byt till svenska');
-  
+  if (translations[lang] && translations[lang].navLabel) {
+    document.querySelector('nav.section-nav').setAttribute('aria-label', translations[lang].navLabel);
+  }
+
   // Update page title and meta description
   if (lang === 'en') {
-    document.title = "Growth Pot — Community and knowledge sharing for people with visual impairments";
-    document.querySelector('meta[name="description"]').setAttribute('content', "Growth Pot is community and knowledge sharing for people with visual impairments and their allies. Read about the event and register.");
+    document.title = "Synvett: Share your perspective and find your own path";
+    document.querySelector('meta[name="description"]').setAttribute('content', "Synvett is community and knowledge sharing for people with visual impairments and their allies. Read about the event and sign up.");
   } else {
-    document.title = "Tillväxt Pot — Gemenskap och kunskapsutbyte för personer med synnedsättning";
-    document.querySelector('meta[name="description"]').setAttribute('content', "Tillväxt Pot är gemenskap och kunskapsutbyte för personer med synnedsättning och deras allierade. Läs om evenemanget och anmäl dig.");
+    document.title = "Synvett: Dela ditt synsätt och hitta din egen väg";
+    document.querySelector('meta[name="description"]').setAttribute('content', "Synvett är gemenskap och kunskapsutbyte för personer med synnedsättning och deras allierade. Läs om evenemanget och anmäl dig.");
   }
   
   // Update html lang attribute
@@ -214,6 +217,25 @@ document.addEventListener('DOMContentLoaded', function() {
   langToggle.addEventListener('click', function() {
     const newLang = currentLanguage === 'sv' ? 'en' : 'sv';
     switchLanguage(newLang);
+  });
+
+  // Mark the topmost visible section as current in the nav (helps screen reader and keyboard users orient)
+  const sectionIds = ['about', 'accessibility', 'details', 'signup', 'team'];
+  const navLinks = {};
+  sectionIds.forEach(id => {
+    const link = document.querySelector(`nav.section-nav a[href="#${id}"]`);
+    if (link) navLinks[id] = link;
+  });
+  const visible = new Set();
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting ? visible.add(e.target.id) : visible.delete(e.target.id));
+    const active = sectionIds.find(id => visible.has(id));
+    sectionIds.forEach(id => { if (navLinks[id]) navLinks[id].removeAttribute('aria-current'); });
+    if (active && navLinks[active]) navLinks[active].setAttribute('aria-current', 'location');
+  }, { threshold: 0.1 });
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) sectionObserver.observe(el);
   });
 });
 </script>
