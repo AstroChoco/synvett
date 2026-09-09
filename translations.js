@@ -62,7 +62,7 @@ const translations = {
     teamPara1: "Synvett är ett socialt projekt som syftar till att vara en mötesplats där vi kan dela med oss av våra erfarenheter, lärdomar och unika perspektiv. Oavsett synförmåga äger var och en av oss ett eget synsätt och vetande som kan ge insikter, öppna nya vägar och växa i symbios med andra.",
     teamPara2: "Projektet drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom projektet är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
     footerContact: "<strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. Vi hjälper gärna till.",
-    footerAccessibility: "Denna sida följer WCAG 2.2 AA. Berätta gärna din feedback för oss. Du hjälper oss forma direkt nästa uppdatering."
+    footerAccessibility: "Denna sida följer WCAG 2.2 AA. Berätta gärna din feedback för oss. Du hjälper oss forma den nästa uppdateringen."
   },
   en: {
     skipLink: "Skip to main content",
