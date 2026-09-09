@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
 <meta charset="UTF-8">
 <!-- Never lock the viewport (no maximum-scale/user-scalable=no) — pinch-zoom and browser text scaling must keep working. -->
@@ -19,7 +19,7 @@
 <a class="skip-link" href="#main" data-i18n="skipLink">Hoppa till huvudinnehåll</a>
 
 <div class="language-switcher">
-  <button id="langToggle" aria-label="Switch language" title="Switch language">
+  <button id="langToggle" aria-label="EN – Switch to English">
     <span id="currentLang">EN</span>
   </button>
 </div>
@@ -44,8 +44,8 @@
   <div class="wrap">
     <ul>
       <li><a href="#about" data-i18n="navAbout">Om träffen</a></li>
-      <li><a href="#accessibility" data-i18n="navAccessibility">Tillgänglighet</a></li>
-      <li><a href="#details" data-i18n="navDetails">Detaljer</a></li>
+      <li><a href="#accessibility" data-i18n="navAccessibility">På plats finns</a></li>
+      <li><a href="#details" data-i18n="navDetails">Träffdetaljer</a></li>
       <li><a href="#signup" data-i18n="navSignup">Anmäl dig</a></li>
       <li><a href="#team" data-i18n="navTeam">Om oss</a></li>
     </ul>
@@ -80,18 +80,15 @@
         </div>
       </div>
     </div>
-    
 
-  <section id="info-overview" aria-labelledby="info-overview-heading">
   </section>
-
 
   <section id="accessibility" aria-labelledby="accessibility-heading">
     <div class="wrap">
       <h2 id="accessibility-heading" data-i18n="accessibilityHeading">På plats finns</h2>
       <ul class="accom-list">
         <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom1">Fika: te, kaffe, vatten och något sött att äta</span></li>
-        <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom2">Seende guider vid ingången och i lokalen (fråga någon av oss arrangörer</span></li>
+        <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom2">Seende guider vid ingången och i lokalen (fråga någon av oss arrangörer)</span></li>
         <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom3">Vattenskålar och rastområde för ledarhundar och andra servicehundar</span></li>
         <li><span class="mark" aria-hidden="true">✓</span><span data-i18n="accom4">Ett tyst rum finns om du behöver en paus från gruppen.</span></li>
       </ul>
@@ -117,7 +114,7 @@
         <div class="detail-card">
           <h3 data-i18n="detailLocation">Plats</h3>
           <p data-i18n="tbdPlats">Insyns kontor, Sandsborgsvägen 52, Enskede</p>
-          <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Sandsborgsv%C3%A4gen+52,+Enskede" target="_blank" rel="noopener" data-i18n="mapButton">Öppna i Google Maps</a>
+          <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Sandsborgsv%C3%A4gen+52,+Enskede" target="_blank" rel="noopener" data-i18n="mapButton">Öppna i Google Maps (öppnas i en ny flik)</a>
         </div>
         <div class="detail-card">
           <h3 data-i18n="detailDirections">Ta sig dit</h3>
@@ -125,8 +122,6 @@
         </div>
       </div>
     </div>
-  </section>
-
   </section>
 
   <section id="signup" aria-labelledby="signup-heading">
@@ -139,7 +134,7 @@
           EDIT ME: replace the href below with your real Google Form URL,
           e.g. https://forms.gle/XXXXXXXXXXXXXXXX
         -->
-        <a id="signupLink" class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-YOUR-SWEDISH-FORM-ID" target="_blank" rel="noopener" data-i18n="signupButton">Öppna anmälningsformuläret (Google Form, öppnas i en ny flik)</a>
+        <a id="signupLink" class="btn btn-primary" href="https://forms.gle/MuNTNXEYkfbGczqz7" target="_blank" rel="noopener" data-i18n="signupButton">Öppna anmälningsformuläret (Google Form, öppnas i en ny flik)</a>
 
         <p class="form-embed-note" data-i18n="formNote">Detta öppnar Googles eget formulär i en ny flik istället för att bädda in det här, eftersom inbäddade iframes kan fungera inkonsekvent med skärmläsare. Vill du hellre anmäla dig via e-post, se våra kontaktuppgifter nedan.</p>
       </div>
@@ -162,7 +157,7 @@
   <div class="wrap">
     <!-- EDIT ME: replace with your real contact details -->
     <p data-i18n="footerContact"><strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href="mailto:info.synvett@gmail.com">info.synvett@gmail.com</a>. Vi hjälper gärna till.</p>
-    <p data-i18n="footerAccessibility">Denna sida följer WCAG 2.1 AA: den fungerar med skärmläsare, tangentbordsnavigering och webbläsarens textzoom. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering.</p>
+    <p data-i18n="footerAccessibility">Denna sida följer WCAG 2.2 AA: den fungerar med skärmläsare, tangentbordsnavigering och webbläsarens textzoom. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering.</p>
   </div>
 </footer>
 
@@ -194,6 +189,8 @@ function switchLanguage(lang) {
   // Update language toggle button
   const currentLangSpan = document.getElementById('currentLang');
   currentLangSpan.textContent = lang === 'sv' ? 'EN' : 'SV';
+  document.getElementById('langToggle').setAttribute('aria-label',
+    lang === 'sv' ? 'EN \u2013 Switch to English' : 'SV \u2013 Byt till svenska');
   
   // Update page title and meta description
   if (lang === 'en') {

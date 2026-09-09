@@ -23,6 +23,7 @@ const translations = {
     navAccessibility: "På plats finns",
     navDetails: "Träffdetaljer",
     navSignup: "Anmäl dig",
+    navTeam: "Om oss",
     aboutHeading: "Om träffen",
     aboutPara1: "Synvett är öppen för personer med synnedsättning, anhöriga till personer med synnedsättning, ledsagare och andra seende allierade.",
     aboutPara2: "Vår strävan är att ha regelbundna träffar, där minst en person agerar moderator och vägleder diskussionerna.",
@@ -37,7 +38,7 @@ const translations = {
     agendaItem3: "Vi diskuterar och fikar till 19:30, eller tills man känner för att gå.",
     accessibilityHeading: "På plats finns",
     accom1: "Fika: te, kaffe, vatten och något sött att äta",
-    accom2: "Seende guider vid ingången och i lokalen (fråga någon av oss arrangörer",
+    accom2: "Seende guider vid ingången och i lokalen (fråga någon av oss arrangörer)",
     accom3: "Vattenskålar och rastområde för ledarhundar och andra servicehundar",
     accom4: "Ett tyst rum finns om du behöver en paus från gruppen.",
     detailsHeading: "Träffdetaljer",
@@ -49,7 +50,7 @@ const translations = {
     tbdTid: "18:00 till 19:30 (dörrarna öppnas 17:30)",
     detailLocation: "Plats",
     tbdPlats: "Insyns kontor, Sandsborgsvägen 52, Enskede",
-    mapButton: "Öppna i Google Maps",
+    mapButton: "Öppna i Google Maps (öppnas i en ny flik)",
     detailDirections: "Ta sig dit",
     tbdVägbeskrivning: "Ta tunnelbanan till Sandsborgs station (gröna linjen). Gå norrut på Sandsborgsvägen i cirka 5 minuter. Insyns kontor ligger på vänster sida, med en ramp vid ingången.",
     signupHeading: "Anmälan",
@@ -61,7 +62,7 @@ const translations = {
     teamPara1: "Synvett är ett socialt projekt som syftar till att vara en mötesplats där vi kan dela med oss av våra erfarenheter, lärdomar och unika perspektiv. Oavsett synförmåga äger var och en av oss ett eget synsätt och vetande som kan ge insikter, öppna nya vägar och växa i symbios med andra.",
     teamPara2: "Projektet drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom projektet är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
     footerContact: "<strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. Vi hjälper gärna till.",
-    footerAccessibility: "Denna sida följer WCAG 2.1 AA: den fungerar med skärmläsare, tangentbordsnavigering och webbläsarens textzoom. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering."
+    footerAccessibility: "Denna sida följer WCAG 2.2 AA: den fungerar med skärmläsare, tangentbordsnavigering och webbläsarens textzoom. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering."
   },
   en: {
     skipLink: "Skip to main content",
@@ -76,6 +77,7 @@ const translations = {
     navAccessibility: "What we offer",
     navDetails: "Event details",
     navSignup: "Sign up",
+    navTeam: "About us",
     aboutHeading: "About the meetup",
     aboutPara1: "Synvett is open to people with visual impairments, their relatives, guides, and other sighted allies.",
     aboutPara2: "Our aim is to hold regular meetups, with at least one person acting as a moderator and guiding the discussions.",
@@ -101,7 +103,7 @@ const translations = {
     tbdTid: "18:00 to 19:30 (doors open at 17:30)",
     detailLocation: "Location",
     tbdPlats: "Insyns office, Sandsborgsvägen 52, Enskede",
-    mapButton: "Open in Google Maps",
+    mapButton: "Open in Google Maps (opens in a new tab)",
     detailDirections: "How to get there",
     tbdVägbeskrivning: "Take the subway to Sandsborg station (green line). Walk north on Sandsborgsvägen for about 5 minutes. The Insyns office is on the left side, with a ramp at the entrance.",
     signupHeading: "Registration",
@@ -113,6 +115,6 @@ const translations = {
     teamPara1: "Synvett is a social project aimed at being a meeting place where we can share our experiences, lessons, and unique perspectives. Regardless of visual ability, each of us has our own perspective and knowledge that can offer insights, open new paths and grow in symbiosis with others.",
     teamPara2: "The project is run on a voluntary basis without commercial interests, government grants, or any form of outside funding. The people behind the project are private individuals with an interest in inclusion, accessibility, and community life. We have no religious or political agenda beyond the hope that Synvett will strengthen us as a group and contribute to a more solidary society.",
     footerContact: "<strong>Questions or accessibility needs not listed here?</strong> Email us at <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. We are happy to help.",
-    footerAccessibility: "This page follows WCAG 2.1 AA: it works with screen readers, keyboard navigation, and browser text zoom. If anything here is difficult to use, tell us — that feedback directly shapes the next update."
+    footerAccessibility: "This page follows WCAG 2.2 AA: it works with screen readers, keyboard navigation, and browser text zoom. If anything here is difficult to use, tell us — that feedback directly shapes the next update."
   }
 };

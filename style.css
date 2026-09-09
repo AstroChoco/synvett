@@ -37,6 +37,7 @@
     outline: none;
     box-shadow: 0 0 0 3px #000, 0 0 0 6px var(--focus-ink);
     border-radius: 4px;
+    scroll-margin-top: 4.5rem;
   }
 
   /* ---- Skip link ---- */
