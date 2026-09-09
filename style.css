@@ -149,19 +149,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem 1.5rem;
-    list-style: none;
     padding: 0;
     margin: 0 0 2rem;
     font-weight: 700;
   }
-  .hero-facts li { display: flex; align-items: baseline; gap: 0.5rem; }
-  .hero-facts .label {
+  .hero-facts div { display: flex; align-items: baseline; gap: 0.5rem; }
+  .hero-facts dt {
     font-weight: 400;
     color: var(--ink-soft);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
   }
+  .hero-facts dd { margin: 0; }
 
   .btn {
     display: inline-block;
@@ -221,7 +221,8 @@
     padding: 0.5rem 0.85rem;
     border-bottom: 3px solid transparent;
   }
-  nav.section-nav a:hover { border-bottom-color: var(--accent); }
+  nav.section-nav a:hover,
+  nav.section-nav a[aria-current] { border-bottom-color: var(--accent); }
 
   #main:focus {
     outline: none;
@@ -335,7 +336,11 @@
   .agenda-list li {
     list-style: decimal;
     padding-left: 0.35rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
   }
+  .agenda-list li:last-child { margin-bottom: 0; }
 
   /* ---- Signup ---- */
   .signup-panel {
