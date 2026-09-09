@@ -62,7 +62,7 @@ const translations = {
     teamPara1: "Synvett är ett socialt projekt som syftar till att vara en mötesplats där vi kan dela med oss av våra erfarenheter, lärdomar och unika perspektiv. Oavsett synförmåga äger var och en av oss ett eget synsätt och vetande som kan ge insikter, öppna nya vägar och växa i symbios med andra.",
     teamPara2: "Projektet drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom projektet är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
     footerContact: "<strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. Vi hjälper gärna till.",
-    footerAccessibility: "Denna sida följer WCAG 2.2 AA: den fungerar med skärmläsare, tangentbordsnavigering och webbläsarens textzoom. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering."
+    footerAccessibility: "Denna sida följer WCAG 2.2 AA. Om något här är svårt att använda, berätta det för oss — den feedbacken formar direkt nästa uppdatering."
   },
   en: {
     skipLink: "Skip to main content",
@@ -115,6 +115,6 @@ const translations = {
     teamPara1: "Synvett is a social project aimed at being a meeting place where we can share our experiences, lessons, and unique perspectives. Regardless of visual ability, each of us has our own perspective and knowledge that can offer insights, open new paths and grow in symbiosis with others.",
     teamPara2: "The project is run on a voluntary basis without commercial interests, government grants, or any form of outside funding. The people behind the project are private individuals with an interest in inclusion, accessibility, and community life. We have no religious or political agenda beyond the hope that Synvett will strengthen us as a group and contribute to a more solidary society.",
     footerContact: "<strong>Questions or accessibility needs not listed here?</strong> Email us at <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. We are happy to help.",
-    footerAccessibility: "This page follows WCAG 2.2 AA: it works with screen readers, keyboard navigation, and browser text zoom. If anything here is difficult to use, tell us — that feedback directly shapes the next update."
+    footerAccessibility: "This page follows WCAG 2.2 AA. If anything here is difficult to use, tell us — that feedback directly shapes the next update."
   }
 };
