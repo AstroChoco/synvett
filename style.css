@@ -260,14 +260,15 @@
     padding: 1rem 1.1rem;
     border-radius: var(--radius);
   }
-  .accom-list .mark {
+  .accom-list li::before {
+    content: "\2713" / "";  /* ✓ — alt text empty so screen readers skip it */
     flex: none;
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
     background: var(--accent);
     color: var(--accent-ink);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
