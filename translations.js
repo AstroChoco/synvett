@@ -11,7 +11,7 @@
 const translations = {
   sv: {
     skipLink: "Hoppa till huvudinnehåll",
-    eyebrow: "Gemanskap träffa",
+    eyebrow: "Gemenskapsträff",
     heroTitle: "Synvett: Dela ditt synsätt och hitta din egen väg",
     tagline: "Tillsammans för funktionsrätten. Välkommen på en avslappnad, kostnadsfri träff för att prata arbete, studier, hjälpmedel, teknologi, utmaningar, strategier och mer!",
     when: "När",
@@ -50,20 +50,19 @@ const translations = {
     detailTime: "Tid",
     tbdTid: "18:00 till 19:30 (dörrarna öppnas 17:30)",
     detailLocation: "Plats",
-    tbdPlats: "Insyns kontor, Sandsborgsvägen 52, Enskede (Tack Insyn för att vi får använda deras kontor)",
+    tbdPlats: "Insyns kontor, Sandsborgsvägen 52, Enskede (Tack Insyn för att vi får använda ert kontor)",
     mapButton: "Öppna i Google Maps (öppnas i en ny flik)",
     detailDirections: "Ta sig dit",
     tbdVägbeskrivning: "Ta gröna linjen i tunnelbanan mot Farsta och gå av vid Skogskyrkogårdens station. När du går ut från stationen, sväng vänster in på Sandsborgsvägen. När du anländer till byggnaden kommer en av oss att hälsa dig vid ingången.",
     signupHeading: "Anmälan",
     signupUrl: "https://forms.gle/MuNTNXEYkfbGczqz7",
-    signupPara: "Anmälan sker via ett kort Googleformulär – vi frågar efter ditt förnamn, kontaktuppgifter, och om du tar med en ledarhund.",
+    signupPara: "Anmälan sker via ett kort Googleformulär – vi frågar efter ditt förnamn, kontaktuppgifter, och om du tar med en ledarhund. Vill du hellre anmäla dig via e-post, skriv till info.synvett@gmail.com.",
     signupButton: "Öppna anmälningsformuläret (Google Form, öppnas i en ny flik)",
-    formNote: "Detta öppnar Googles eget formulär i en ny flik istället för att bädda in det här, eftersom inbäddade iframes kan fungera inkonsekvent med skärmläsare. Vill du hellre anmäla dig via e-post, se våra kontaktuppgifter nedan.",
     teamHeading: "Om oss",
-    teamPara1: "Synvett är ett community som syftar till att vara en mötesplats där vi kan dela med oss av våra erfarenheter, lärdomar och unika perspektiv. Oavsett synförmåga äger var och en av oss ett eget synsätt och vetande som kan ge insikter, öppna nya vägar och växa i symbios med andra.",
-    teamPara2: "Det community drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom det community är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
+    teamPara1: "Synvett syftar till att vara ett community där vi kan dela med oss av våra erfarenheter, lärdomar och unika perspektiv. Oavsett synförmåga äger var och en av oss ett eget synsätt och vetande som kan ge insikter, öppna nya vägar och växa i symbios med andra.",
+    teamPara2: "Detta community drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom evenemanget är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
     footerContact: "<strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. Vi hjälper gärna till.",
-    footerAccessibility: "Denna sida följer WCAG 2.2 AA. Berätta gärna din feedback för oss. Du hjälper oss forma den nästa uppdateringen."
+    footerAccessibility: "Berätta gärna din feedback om webbplatsens tillgänglighet för oss. Du hjälper oss forma den nästa uppdateringen."
   },
   en: {
     skipLink: "Skip to main content",
@@ -104,19 +103,18 @@ const translations = {
     detailTime: "Time",
     tbdTid: "18:00 to 19:30 (doors open at 17:30)",
     detailLocation: "Location",
-    tbdPlats: "Insyns office, Sandsborgsvägen 52, Enskede (Thanks to Insyn for letting us use their office)",
+    tbdPlats: "Insyns office, Sandsborgsvägen 52, Enskede (Thanks to Insyn for letting us use your office)",
     mapButton: "Open in Google Maps (opens in a new tab)",
     detailDirections: "How to get there",
     tbdVägbeskrivning: "Take the green line subway towards Farsta and get off at to Skogskyrkogården station. When you exit the station, turn left on to Sandsborgsvägen. When you arrive at the building, one of us will greet you.",
     signupHeading: "Registration",
     signupUrl: "https://forms.gle/Gt8LP8ZkeSwW8GWo6",
-    signupPara: "Registration takes place via a short Google Form — we ask for your first name, contact details, and whether you are bringing a guide dog.",
+    signupPara: "Registration takes place via a short Google Form — we ask for your first name, contact details, and whether you are bringing a guide dog. If you would prefer to register by email, contact at at info.synvett@gmail.com",
     signupButton: "Open the registration form (Google Form, opens in a new tab)",
-    formNote: "This opens Google’s form in a new tab instead of embedding it here, because embedded iframes can work inconsistently with screen readers. If you would prefer to register by email, see our contact details below.",
     teamHeading: "About us",
     teamPara1: "Synvett is a community aimed at being a meeting place where we can share our experiences, lessons, and unique perspectives. Regardless of visual ability, each of us has our own perspective and knowledge that can offer insights, open new paths and grow in symbiosis with others.",
-    teamPara2: "The community is run on a voluntary basis without commercial interests, government grants, or any form of outside funding. The people behind the community are private individuals with an interest in inclusion, accessibility, and community life. We have no religious or political agenda beyond the hope that Synvett will strengthen us as a group and contribute to a more solidary society.",
+    teamPara2: "This community is run on a voluntary basis without commercial interests, government grants, or any form of outside funding. The people behind the event are private individuals with an interest in inclusion, accessibility, and community life. We have no religious or political agenda beyond the hope that Synvett will strengthen us as a group and contribute to a more solidary society.",
     footerContact: "<strong>Questions or accessibility needs not listed here?</strong> Email us at <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. We are happy to help.",
-    footerAccessibility: "This page follows WCAG 2.2 AA. Feel free to share your feedback. You can directly shape the next update."
+    footerAccessibility: "Feel free to share your feedback about our website accessibility. You can directly shape the next update."
   }
 };
