@@ -60,7 +60,7 @@ const translations = {
     signupButton: "Öppna anmälningsformuläret (Google Form, öppnas i en ny flik)",
     teamHeading: "Om oss",
     teamPara1: "Synvett syftar till att vara ett community där vi kan dela med oss av våra erfarenheter, lärdomar och unika perspektiv. Oavsett synförmåga äger var och en av oss ett eget synsätt och vetande som kan ge insikter, öppna nya vägar och växa i symbios med andra.",
-    teamPara2: "Det community drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom det community är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
+    teamPara2: "Detta community drivs på ideell basis utan kommersiella intressen, statsbidrag eller någon form av utomstående finansiering. Vi som står bakom evenemanget är privatpersoner med eget intresse för inkludering, tillgänglighet och föreningsliv. Vi har ingen religiös eller politisk agenda bortom förhoppningen att Synvett ska stärka oss som grupp och bidra till ett mer solidariskt samhälle.",
     footerContact: "<strong>Frågor eller tillgänglighetsbehov som inte listas här?</strong> Mejla oss på <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. Vi hjälper gärna till.",
     footerAccessibility: "Berätta gärna din feedback om webbplatsens tillgänglighet för oss. Du hjälper oss forma den nästa uppdateringen."
   },
@@ -113,7 +113,7 @@ const translations = {
     signupButton: "Open the registration form (Google Form, opens in a new tab)",
     teamHeading: "About us",
     teamPara1: "Synvett is a community aimed at being a meeting place where we can share our experiences, lessons, and unique perspectives. Regardless of visual ability, each of us has our own perspective and knowledge that can offer insights, open new paths and grow in symbiosis with others.",
-    teamPara2: "The community is run on a voluntary basis without commercial interests, government grants, or any form of outside funding. The people behind the community are private individuals with an interest in inclusion, accessibility, and community life. We have no religious or political agenda beyond the hope that Synvett will strengthen us as a group and contribute to a more solidary society.",
+    teamPara2: "This community is run on a voluntary basis without commercial interests, government grants, or any form of outside funding. The people behind the event are private individuals with an interest in inclusion, accessibility, and community life. We have no religious or political agenda beyond the hope that Synvett will strengthen us as a group and contribute to a more solidary society.",
     footerContact: "<strong>Questions or accessibility needs not listed here?</strong> Email us at <a href=\"mailto:info.synvett@gmail.com\">info.synvett@gmail.com</a>. We are happy to help.",
     footerAccessibility: "Feel free to share your feedback about our website accessibility. You can directly shape the next update."
   }
