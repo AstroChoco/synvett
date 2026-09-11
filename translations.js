@@ -38,7 +38,7 @@ const translations = {
     agendaItem2: "18:00 presenterar vi oss själva och Synvett.",
     agendaItem3: "Vi diskuterar och fikar till 19:30, eller tills man känner för att gå.",
     accessibilityHeading: "På plats finns...",
-    accom1: "Fika: te, kaffe, vatten och något sött att äta".,
+    accom1: "Fika: te, kaffe, vatten och något sött att äta",
     accom2: "Seende guider vid ingången och i lokalen (fråga någon av oss arrangörer).",
     accom3: "Vattenskålar och rastområde för ledarhundar och andra servicehundar.",
     accom4: "Ett tyst rum för den som behöver en paus från gruppen.",
