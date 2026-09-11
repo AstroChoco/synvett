@@ -288,7 +288,6 @@
   .detail-card h3 {
     margin: 0 0 0.35rem;
     font-size: 1rem;
-    text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--ink-soft);
   }
@@ -316,7 +315,6 @@
   .info-card h3 {
     margin: 0 0 0.35rem;
     font-size: 1rem;
-    text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--ink-soft);
   }
@@ -351,13 +349,6 @@
   }
   .signup-panel p { max-width: 60ch; }
 
-  .form-embed-note {
-    margin-top: 1.75rem;
-    padding-top: 1.5rem;
-    border-top: 1px dashed var(--line);
-    font-size: 0.95rem;
-    color: var(--ink-soft);
-  }
 
   /* ---- Page divider ---- */
   .page-divider {
