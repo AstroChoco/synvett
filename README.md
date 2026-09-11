@@ -39,10 +39,3 @@ npm run sync
 ```
 
 This updates the HTML fallback content to match your Swedish translations.
-
-## Deploying
-
-Nothing to build. Push `index.html`, `translations.js`, and `style.css` to your 
-repo and enable GitHub Pages in Settings → Pages, pointing at the branch/folder 
-containing them. `package.json`, `.gitignore`, and this README are dev-only — 
-GitHub Pages ignores them.
