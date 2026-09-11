@@ -1,10 +1,8 @@
-# nav-self-growth-together
+# Synvett
 
 A single static page (`index.html`) for GitHub Pages. No build step — this is
 plain HTML/CSS, so nothing here affects what gets deployed. The dev server
 below is only for previewing changes locally.
-
-**Repository:** [nav-self-growth-together](https://github.com/AstroChoco/nav-self-growth-together)
 
 ## Local development
 
