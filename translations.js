@@ -1,5 +1,5 @@
 /**
- * Language translations for the meetup page
+ * Language translations for the meet-up page
  * 
  * To change the text content on the page, edit the values in this file.
  * - 'sv' contains Swedish translations
@@ -68,21 +68,21 @@ const translations = {
     skipLink: "Skip to main content",
     eyebrow: "Community gathering",
     heroTitle: "Synvett: Share your perspective and find your own path",
-    tagline: "Together for disability rights.Welcome to a relaxed, cost-free meetup to talk about work, studies, (assistive) technology, challenges, strategies and more!",
+    tagline: "Together for disability rights.Welcome to a relaxed, cost-free meet-up to talk about work, studies, (assistive) technology, challenges, strategies and more!",
     when: "When",
     where: "Where",
     tbdNär: "18:00, 24 September, Thursday, 2026",
     tbdVar: "Sandsborgsvägen 52, Enskede",
     heroButton: "Sign up for Synvett",
-    navAbout: "About the meetup",
+    navAbout: "About the meet-up",
     navAccessibility: "What we offer",
     navDetails: "Event details",
     navSignup: "Sign up",
     navTeam: "About us",
     navLabel: "Page sections",
-    aboutHeading: "About the meetup",
+    aboutHeading: "About the meet-up",
     aboutPara1: "Synvett is open to people with visual impairments, relatives and companions of people with visual impairments, guides and other sighted allies.",
-    aboutPara2: "Our aim is to host regular meetups, with one or more organizers acting as a moderator to guide the discussions.",
+    aboutPara2: "Our aim is to host regular meet-ups, with one or more organizers acting as a moderator to guide the discussions.",
     aboutPara3: "Come for conversation, new connections, knowledge sharing and good company. We provide fika!",
     aboutPara4: "There is no pressure to talk if you would rather listen or simply hang out. First-time participants are always welcome — you do not need to bring anything but yourself.",
     attendeesHeading: "Who else is coming?",
@@ -96,7 +96,7 @@ const translations = {
     accom2: "Sighted guides at the entrance and in the room (just ask any of us organizers)",
     accom3: "Water bowls and dog walking areas for guide dogs and other service dogs",
     accom4: "A quiet room for anyone who needs a break from the group.",
-    detailsHeading: "Meetup details",
+    detailsHeading: "Meet-up details",
     detailLanguage: "Language",
     tbdLanguage: "Swedish and English",
     detailDate: "Date",
