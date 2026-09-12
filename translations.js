@@ -68,7 +68,7 @@ const translations = {
     skipLink: "Skip to main content",
     eyebrow: "Community gathering",
     heroTitle: "Synvett: Share your perspective and find your own path",
-    tagline: "Together for disability rights.Welcome to a relaxed, cost-free meet-up to talk about work, studies, (assistive) technology, challenges, strategies and more!",
+    tagline: "Together for disability rights. Welcome to a relaxed, cost-free meet-up to talk about work, studies, (assistive) technology, challenges, strategies and more!",
     when: "When",
     where: "Where",
     tbdNär: "18:00, 24 September, Thursday, 2026",
