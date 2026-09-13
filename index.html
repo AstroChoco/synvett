@@ -67,7 +67,7 @@
       <div class="stacked-card-list">
         <div class="info-card" role="group" id="attendees" aria-labelledby="attendees-heading">
           <h3 id="attendees-heading" data-i18n="attendeesHeading">Vilka andra kommer?</h3>
-          <p data-i18n="attendeesPara">David Renström, Claudio Quitral, Jing Wu, Lisa Ly och Emil Näslund kommer att närvara och prata om sina tankar, erfarenheter och vägar!</p>
+          <p data-i18n="attendeesPara">David Renström, Claudio Quitral, Jing Wu, Lisa Ly, Emil Erdtman och Emil Näslund kommer att närvara och prata om sina tankar, erfarenheter och vägar!</p>
         </div>
 
         <div class="info-card" role="group" id="agenda" aria-labelledby="agenda-heading">
@@ -75,7 +75,7 @@
           <ol class="agenda-list">
             <li data-i18n="agendaItem1">Dörrarna öppnas 17:30.</li>
             <li data-i18n="agendaItem2">18:00 presenterar vi oss själva och Synvett.</li>
-            <li data-i18n="agendaItem3">Vi diskuterar och fikar till 19:30, eller tills man känner för att gå.</li>
+            <li data-i18n="agendaItem3">Vi diskuterar och fikar till 19:30, eller tills man känner för att gå. Några av oss delar först med sig av sina tankar och erfarenheter. Sedan faciliterar moderatorn den öppna diskussionen.</li>
           </ol>
         </div>
       </div>
@@ -163,13 +163,22 @@
 <script src="translations.js"></script>
 
 <script>
-// Get current language from localStorage or default to Swedish
-let currentLanguage = localStorage.getItem('preferredLanguage') || 'sv';
+function getLangParam() {
+  const p = new URLSearchParams(location.search).get('lang');
+  return p === 'sv' || p === 'en' ? p : null;
+}
+
+let currentLanguage = getLangParam() || 'sv';
+
+// Canonicalize: ensure ?lang= is always present in the URL
+if (!getLangParam()) {
+  history.replaceState(null, '', '?lang=sv' + location.hash);
+}
 
 // Function to switch language
 function switchLanguage(lang) {
   currentLanguage = lang;
-  localStorage.setItem('preferredLanguage', lang);
+  history.pushState(null, '', '?lang=' + lang + location.hash);
 
   const signupLink = document.getElementById('signupLink');
   if (signupLink && translations[lang] && translations[lang].signupUrl) {
